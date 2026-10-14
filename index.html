@@ -34,12 +34,16 @@
 
       <section class="group">
         <div class="row">
+          <button id="prevMonth" class="btn step" data-i18n-aria="time.prevMonth" data-i18n-title="time.prevMonth" aria-label="Bulan sebelumnya" title="Bulan sebelumnya">‹</button>
           <input id="date" type="date" data-i18n-aria="time.date" aria-label="Tanggal">
-          <button id="nowBtn" class="btn" data-i18n="time.now">Sekarang</button>
+          <button id="nextMonth" class="btn step" data-i18n-aria="time.nextMonth" data-i18n-title="time.nextMonth" aria-label="Bulan berikutnya" title="Bulan berikutnya">›</button>
         </div>
         <input id="slider" type="range" min="0" max="1439" step="1" data-i18n-aria="time.slider" aria-label="Jam dalam hari">
         <div class="row">
           <button id="playBtn" class="btn primary" data-i18n-aria="time.playPause" aria-label="Putar/jeda">❚❚ Jeda</button>
+          <button id="nowBtn" class="btn" data-i18n="time.now">Sekarang</button>
+        </div>
+        <div class="row">
           <select id="speed" data-i18n-aria="time.speed" aria-label="Kecepatan">
             <option value="1" data-i18n="speed.1">Waktu nyata</option>
             <option value="60" data-i18n="speed.60">1 menit / detik</option>

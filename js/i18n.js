@@ -17,6 +17,8 @@
 
       'time.date': 'Tanggal',
       'time.now': 'Sekarang',
+      'time.prevMonth': 'Bulan sebelumnya',
+      'time.nextMonth': 'Bulan berikutnya',
       'time.slider': 'Jam dalam hari',
       'time.playPause': 'Putar/jeda',
       'time.play': '▶ Putar',
@@ -109,6 +111,8 @@
 
       'time.date': 'Date',
       'time.now': 'Now',
+      'time.prevMonth': 'Previous month',
+      'time.nextMonth': 'Next month',
       'time.slider': 'Time of day',
       'time.playPause': 'Play/pause',
       'time.play': '▶ Play',

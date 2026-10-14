@@ -699,6 +699,21 @@
 
   $('playBtn').addEventListener('click', () => setPlaying(!S.playing));
   $('speed').addEventListener('change', (e) => { S.speed = +e.target.value; setPlaying(true); });
+  // Pindah ke tanggal yang sama di bulan lain, jam tetap. Tanggal 31 Januari
+  // menjadi 28/29 Februari, dst.
+  function shiftMonth(delta) {
+    const d = new Date(S.t);
+    const day = d.getDate();
+    d.setDate(1);
+    d.setMonth(d.getMonth() + delta);
+    const lastDay = new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate();
+    d.setDate(Math.min(day, lastDay));
+    S.t = d.getTime();
+    dirty = true;
+  }
+  $('prevMonth').addEventListener('click', () => shiftMonth(-1));
+  $('nextMonth').addEventListener('click', () => shiftMonth(1));
+
   $('nowBtn').addEventListener('click', () => {
     S.t = Date.now();
     S.speed = 1;

@@ -64,6 +64,7 @@ h1 { margin: 0; font-size: 20px; letter-spacing: 0.2px; }
 
 .row { display: flex; gap: 8px; align-items: center; }
 .row > * { flex: 1; }
+.row > .step { flex: 0 0 auto; padding: 6px 11px; font-size: 16px; line-height: 1; }
 
 input[type="date"], select {
   background: var(--input);
