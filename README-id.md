@@ -2,6 +2,8 @@
 
 *English: [README.md](README.md)*
 
+**▶ Coba langsung: https://mirzaakhena.github.io/peta-sholat/**
+
 Peta interaktif yang memperlihatkan **garis waktu sholat** (Subuh, Terbit, Zuhur, Ashar, Maghrib, Isya) menyapu permukaan bumi. Setiap garis menghubungkan semua titik yang *pada detik yang sama* sedang memasuki waktu sholat tersebut. Area di antara garis diwarnai sesuai waktu sholat yang sedang berlangsung.
 
 ## Menjalankan

@@ -2,6 +2,8 @@
 
 *Bahasa Indonesia: [README-id.md](README-id.md)*
 
+**▶ Live demo: https://mirzaakhena.github.io/peta-sholat/**
+
 An interactive map showing **prayer-time lines** (Fajr, Sunrise, Dhuhr, Asr, Maghrib, Isha) sweeping across the surface of the Earth. Each line connects every point that is entering that prayer time *at the same instant*. The areas between the lines are colored by the prayer time currently in effect there.
 
 ## Running
