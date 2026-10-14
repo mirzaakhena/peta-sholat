@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peta Sholat</title>
+  <meta name="description" content="Garis-garis waktu sholat yang menyapu permukaan bumi.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="map" data-i18n-aria="map.aria" aria-label="Peta garis waktu sholat"></canvas>
+
+  <aside id="panel">
+    <header class="head">
+      <div>
+        <h1 data-i18n="app.title">Peta Sholat</h1>
+        <p class="sub" data-i18n="app.subtitle">Garis waktu sholat yang menyapu bumi</p>
+      </div>
+      <div class="head-actions">
+        <div class="seg lang" id="langSwitch" role="group" data-i18n-aria="lang.aria" aria-label="Bahasa">
+          <button data-lang="id">ID</button>
+          <button data-lang="en">EN</button>
+        </div>
+        <button id="togglePanel" class="icon-btn" data-i18n-aria="panel.collapse" data-i18n-title="panel.collapse" aria-label="Lipat panel" title="Lipat panel">▾</button>
+      </div>
+    </header>
+
+    <div class="body">
+      <section class="clock">
+        <div id="timeLocal" class="big">—</div>
+        <div id="dateLocal" class="muted">—</div>
+        <div id="timeUtc" class="muted small">—</div>
+      </section>
+
+      <section class="group">
+        <div class="row">
+          <input id="date" type="date" data-i18n-aria="time.date" aria-label="Tanggal">
+          <button id="nowBtn" class="btn" data-i18n="time.now">Sekarang</button>
+        </div>
+        <input id="slider" type="range" min="0" max="1439" step="1" data-i18n-aria="time.slider" aria-label="Jam dalam hari">
+        <div class="row">
+          <button id="playBtn" class="btn primary" data-i18n-aria="time.playPause" aria-label="Putar/jeda">❚❚ Jeda</button>
+          <select id="speed" data-i18n-aria="time.speed" aria-label="Kecepatan">
+            <option value="1" data-i18n="speed.1">Waktu nyata</option>
+            <option value="60" data-i18n="speed.60">1 menit / detik</option>
+            <option value="600" data-i18n="speed.600">10 menit / detik</option>
+            <option value="3600" data-i18n="speed.3600">1 jam / detik</option>
+            <option value="14400" data-i18n="speed.14400">4 jam / detik</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="group">
+        <label class="field"><span data-i18n="calc.method">Metode</span>
+          <select id="method"></select>
+        </label>
+        <label class="field"><span data-i18n="calc.asr">Ashar</span>
+          <select id="asr">
+            <option value="1" data-i18n="asr.1">Syafi'i, Maliki, Hanbali (bayangan 1×)</option>
+            <option value="2" data-i18n="asr.2">Hanafi (bayangan 2×)</option>
+          </select>
+        </label>
+        <label class="field"><span data-i18n="calc.highLat">Lintang tinggi</span>
+          <select id="highLat"></select>
+        </label>
+        <label class="check"><input id="ihtiyat" type="checkbox"> <span data-i18n="calc.ihtiyat">Ihtiyat +2 menit</span></label>
+      </section>
+
+      <section class="group">
+        <div class="seg" id="projSwitch" role="group" data-i18n-aria="view.projection" aria-label="Proyeksi">
+          <button data-proj="globe" class="on" data-i18n="view.globe">Globe</button>
+          <button data-proj="flat" data-i18n="view.flat">Peta datar</button>
+        </div>
+        <label class="check"><input id="zones" type="checkbox" checked> <span data-i18n="view.zones">Warnai zona waktu</span></label>
+        <label class="check"><input id="showTerbit" type="checkbox" checked> <span data-i18n="view.showTerbit">Tampilkan garis Terbit</span></label>
+        <label class="check"><input id="lockSun" type="checkbox"> <span data-i18n="view.lockSun">Kunci kamera ke matahari</span></label>
+        <button id="locate" class="btn wide" data-i18n="locate.button">📍 Lokasi saya</button>
+      </section>
+
+      <section class="legend" id="legend"></section>
+      <p class="hint small muted" data-i18n="hint">Seret untuk memutar, gulir/cubit untuk zoom, klik titik mana saja untuk melihat jadwalnya.</p>
+    </div>
+  </aside>
+
+  <div id="info" class="info" hidden></div>
+
+  <script src="vendor/d3.min.js"></script>
+  <script src="vendor/topojson-client.min.js"></script>
+  <script src="vendor/countries-110m.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/astro.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

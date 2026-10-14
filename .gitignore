@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Artefak uji browser (Playwright MCP)
+.playwright-mcp/
+
+# Node (bila nanti dipakai untuk tes/tooling)
+node_modules/
+npm-debug.log*
+
+# Log & berkas sementara
+*.log
+tmp/
