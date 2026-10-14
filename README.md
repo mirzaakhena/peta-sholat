@@ -4,6 +4,10 @@
 
 **▶ Live demo: https://mirzaakhena.github.io/peta-sholat/**
 
+> A typical prayer-time app asks: **"At my location, what time is Asr?"**
+>
+> This app flips the question: **"Right now, where on Earth is Asr time just beginning?"**
+
 An interactive map showing **prayer-time lines** (Fajr, Sunrise, Dhuhr, Asr, Maghrib, Isha) sweeping across the surface of the Earth. Each line connects every point that is entering that prayer time *at the same instant*. The areas between the lines are colored by the prayer time currently in effect there.
 
 ## Running

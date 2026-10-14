@@ -4,6 +4,10 @@
 
 **▶ Coba langsung: https://mirzaakhena.github.io/peta-sholat/**
 
+> Biasanya aplikasi sholat bertanya: **"Di lokasi saya, Ashar jam berapa?"**
+>
+> Aplikasi ini membalik pertanyaannya: **"Pada detik ini, di mana saja di bumi yang sedang masuk waktu Ashar?"**
+
 Peta interaktif yang memperlihatkan **garis waktu sholat** (Subuh, Terbit, Zuhur, Ashar, Maghrib, Isya) menyapu permukaan bumi. Setiap garis menghubungkan semua titik yang *pada detik yang sama* sedang memasuki waktu sholat tersebut. Area di antara garis diwarnai sesuai waktu sholat yang sedang berlangsung.
 
 ## Menjalankan
