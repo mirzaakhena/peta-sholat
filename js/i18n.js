@@ -14,6 +14,7 @@
       'map.aria': 'Peta garis waktu sholat',
       'panel.collapse': 'Lipat panel',
       'lang.aria': 'Bahasa',
+      'github.link': 'Kode sumber di GitHub',
 
       'time.date': 'Tanggal',
       'time.now': 'Sekarang',
@@ -108,6 +109,7 @@
       'map.aria': 'Map of prayer-time lines',
       'panel.collapse': 'Collapse panel',
       'lang.aria': 'Language',
+      'github.link': 'Source code on GitHub',
 
       'time.date': 'Date',
       'time.now': 'Now',
