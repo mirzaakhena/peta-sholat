@@ -8,6 +8,8 @@
 >
 > This app flips the question: **"Right now, where on Earth is Asr time just beginning?"**
 
+![Globe showing Dhuhr, Asr, Maghrib, and Isha lines sweeping across the Earth](og-image.png)
+
 An interactive map showing **prayer-time lines** (Fajr, Sunrise, Dhuhr, Asr, Maghrib, Isha) sweeping across the surface of the Earth. Each line connects every point that is entering that prayer time *at the same instant*. The areas between the lines are colored by the prayer time currently in effect there.
 
 ## Running
